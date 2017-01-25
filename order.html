@@ -9,21 +9,21 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Sign in | Archie P. Manayaga</title>
+    <title>order slip</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/signin.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../js/ie-emulation-modes-warning.js"></script>
+    <script src="js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -38,13 +38,12 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" ><a href="index.html">Home</a></li>
-            <li role="presentation"><a href="about.html">About</a></li>
-            <li role="presentation"><a href="contact.html">Contact</a></li>
-            <li role="presentation"><a href="login.html">Log in</a></li>
+            <li role="presentation" ><a href="#appointment">Appointments</a></li>
+            <li role="presentation"><a href="#report">Reports</a></li>
+            <li role="presentation"><a href="index.html">Log out</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">Sign Up</h3>
+        <h3 class="text-muted">Order Slip</h3>
       </div>
 
 
@@ -54,50 +53,52 @@
            <div class="col-sm-8 col-sm-offset-2">
              <form class="form-horizontal" action="#" method="post">
                <div class="form-group">
-                 <label class="col-sm-4 text-right" for="firstName">FirstName:</label>
+                 <label class="col-sm-4 text-right" for="name">Name:</label>
                  <div class="col-sm-8">
-                    <input type="text" name="firstname" id="firstName" value="" placeholder="" class="form-control">
+                    <input type="text" name="name" id="name" value="" placeholder="" class="form-control">
                  </div>
 
                </div>
                <div class="form-group">
-                 <label class="col-sm-4 text-right" for="lastname">Lastname:</label>
+                 <label class="col-sm-4 text-right" for="flower">Flower:</label>
                  <div class="col-sm-8">
-                    <input type="Lastname" name="lastname" id="lastname" value="" placeholder="" class="form-control">
+                    <input type="flower" name="flower" id="flower" value="" placeholder="" class="form-control">
+                 </div>
+
+               </div>
+               <div class="form-group">
+                 <label class="col-sm-4 text-right" for="color">Color:</label>
+                 <div class="col-sm-8">
+                    <input name="color" value="" placeholder="" class="form-control">
+                 </div>
+               </div>
+
+
+               <div class="form-group">
+                 <label class="col-sm-4 text-right" for="quantity">Quantity:</label>
+                 <div class="col-sm-8">
+                    <input type="quantity" name="quantity" id="quantity" value="" placeholder="" class="form-control">
                  </div>
                </div>
 
                <div class="form-group">
-                 <label class="col-sm-4 text-right" for="email">Email:</label>
+                 <label class="col-sm-4 text-right" for="amount">Amount:</label>
                  <div class="col-sm-8">
-                    <input type="email" name="email" id="email" value="" placeholder="me@example.com" class="form-control">
+                    <input type="amount" name="amount" id="amount" value="" placeholder="" class="form-control">
                  </div>
                </div>
 
                <div class="form-group">
-                 <label class="col-sm-4 text-right" for="confirnm_email">Confirm Email:</label>
+                 <label class="col-sm-4 text-right" for="service">Service:</label>
                  <div class="col-sm-8">
-                    <input type="confirm_email" name="confir_email" id="confirm_email" value="" placeholder="me@example.com" class="form-control">
-                 </div>
-               </div>
-
-               <div class="form-group">
-                 <label class="col-sm-4 text-right" for="password">Password:</label>
-                 <div class="col-sm-8">
-                    <input type="password" name="password" id="password" value="" placeholder="*********" class="form-control">
-                 </div>
-               </div>
-
-               <div class="form-group">
-                 <label class="col-sm-4 text-right" for="confrim_password">Confirm Password:</label>
-                 <div class="col-sm-8">
-                    <input type="confirm_password" name="confrim_password" id="confirm_password" value="" placeholder="*********" class="form-control">
+                    <input type="service" name="service" id="service" value="" placeholder="" class="form-control">
                  </div>
                </div>
 
                <div class="form-group">
                  <div class="col-sm-8 col-sm-offset-4 text-right">
-                   <button type="button" name="login" class="btn btn-primary">Submit</button>
+                   <a href="success.html" type="button" name="OK" class="btn btn-primary"> OK</a>
+                    <button type="button" name="edit" class="btn btn-primary"> Edit</button>
                  </div>
                </div>
 
